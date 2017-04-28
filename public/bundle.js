@@ -29293,7 +29293,7 @@
 /* 264 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	'use strict';
+	"use strict";
 
 	var React = __webpack_require__(8);
 
@@ -29307,9 +29307,37 @@
 
 	var About = function About(props) {
 	  return React.createElement(
-	    'h3',
+	    "div",
 	    null,
-	    'About Component'
+	    React.createElement(
+	      "h1",
+	      { className: "text-center" },
+	      "About"
+	    ),
+	    React.createElement(
+	      "p",
+	      null,
+	      "This is my first React application. I develop this application for learning React."
+	    ),
+	    React.createElement(
+	      "p",
+	      null,
+	      "Here are some tools i use."
+	    ),
+	    React.createElement(
+	      "ul",
+	      null,
+	      React.createElement(
+	        "li",
+	        null,
+	        "React."
+	      ),
+	      React.createElement(
+	        "li",
+	        null,
+	        "Open weather maps."
+	      )
+	    )
 	  );
 	};
 
